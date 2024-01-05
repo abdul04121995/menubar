@@ -24,12 +24,13 @@ body {
 ion-icon {
   font-size: 2rem;
 }
+
 ul {
   display: flex;
 }
-li:not(:last-child) {
+/* li:not(:last-child) {
   margin-right: 0.5rem;
-}
+} */
 li {
   position: relative;
   /* border: 1px solid white; */
@@ -65,4 +66,12 @@ li.active .menu-word {
 }
 li.active .menu-icon {
   transform: translateY(-100%);
+}
+@media screen and (max-width: 768px) {
+  ion-icon {
+    font-size: 1.5rem;
+  }
+  .menu-word {
+    font-size: 0.8rem;
+  }
 }
